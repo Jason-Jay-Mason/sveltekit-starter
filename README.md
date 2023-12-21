@@ -1,22 +1,13 @@
-# create-svelte
+# Svelte Kit Starter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is my boiler plate for Svelte Kit front ends. It adds to create svelte@latest:
+- UnoCSS
+- Stackbit 
+- My config options
 
-## Creating a project
+## Developing Stackbit
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -25,14 +16,13 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Stackbit Git Backed Editing
 
-To create a production version of your app:
-
+Stackbit is a framework-agnostic visual content editor. The recommended method for local development is to install the CLI tool, which allows you to run Stackbit on any project as long as it has a 'stackbit.config.js' file in the project's root directory. If you haven't already, install the CLI tool globally:
 ```bash
-npm run build
+npm install -g @stackbit/cli@latest
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To edit the site using Stackbit, go to the root directory of this project and run:
+```bash
+stackbit dev
+```
